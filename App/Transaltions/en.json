@@ -1,0 +1,39 @@
+{
+    "welcome": "Welcome",
+    "enter": "Enter Your Name",
+    "email": "Email",
+    "password": "Password",
+    
+    // Help I have translations 
+    "job_title": "Current job Title",
+    "what_happened": "What Happend?",
+    "who_was": "Who Was involved?",
+    "past_how": "In the past how was your relationship with this person?",
+    "has_changed": "Has the relationship Changed?",
+    "was_ther_witness": "Was there a witness to the event?",
+    "name": "If so name anp position they hold?",
+    "first_time": "Is the issue related to how you perform your job",
+    "issue_related": "Is the issue related to your relationship with another employee",
+    "have_a": "Do you have a job description",
+    "how_did": "How did this incident make you feel?",
+    "have_reported": "Have you reported it to your Manager",
+    "general_manager": "Have you reported it to your General Manager",
+    "resolve_issue": "What have you done to resolve this issue?",
+    "outcome_seeking": "What is the outcome that you are seeking",
+    "happpen_first": "If not when did it happen last time?",
+    "first_time_has": "Is this the first time it has happened?",
+    // here ends help i have translations
+
+    //here begins for english screen translations
+    "first_name": "First Name :",
+    "last_name": "Last Name :",
+    "email_english": "Email",
+    "working_place": "Current working place",
+    "address": "Address",
+    "contact_number": "Contact Number",
+    "superannuation": "Sperannuation",
+    "maritial_status": "Maritial Status",
+    "dependent": "Number of Dependent",
+    "date_birth": "Date of Birtth"
+    // here ends for english screen translations
+}

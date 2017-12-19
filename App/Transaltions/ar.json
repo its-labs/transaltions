@@ -1,0 +1,39 @@
+{
+    "welcome": "أهلا بك",
+    "enter": "أدخل أسمك",
+    "email": "البريد الإلكتروني",
+    "password": "كلمه السر",
+    
+    // Help I have translations 
+    "job_title": "المسمي الوظيفي الحالي",
+    "what_happened": "ماذا حدث?",
+    "who_was": "الذي شارك?",
+    "past_how": "في الماضي كيف كانت علاقتك مع هذا الشخص?",
+    "has_changed": "هل تغيرت العلاقة?",
+    "was_ther_witness": "هل كان هناك شاهد على الحدث?",
+    "name": "إذا كان ذلك اسم موقف أنب يحملونها?",
+    "first_time": "هل تتعلق المشكلة بكيفية أداء مهمتك",
+    "issue_related": "هل تتعلق المشكلة بعلاقتك مع موظف آخر",
+    "have_a": "هل لديك وصف وظيفي",
+    "how_did": "كيف جعل هذا الحادث تشعر?",
+    "have_reported": "هل أبلغت مديرك بذلك",
+    "general_manager": "هل أبلغت المدير العام بذلك",
+    "resolve_issue": "ما فعلته لحل هذه المشكلة?",
+    "outcome_seeking": "ما هي النتيجة التي تبحث عنها",
+    "happpen_first": "إن لم يكن عندما حدث ذلك فيالمرة الأخيرة?",
+    "first_time_has": "هل هذه هي المرة الأولى التييحدث فيها?",
+    // here ends help i have translations
+  
+    //here begins for english screen translations
+    "first_name": "الاسم الاول",
+    "last_name": "الكنية",
+    "email_english": "البريد الإلكتروني",
+    "working_place": "مكان العمل الحالي ",
+    "address": "عنوان",
+    "contact_number": "رقم الاتصال",
+    "superannuation": "التقاعد",
+    "maritial_status": "الحالة الحالة الإجتماعية",
+    "dependent": "عدد المستقلين",
+    "date_birth": "تاريخ الولادة"
+    // here ends for english screen translations
+  }
