@@ -14,7 +14,8 @@ import { Grievance } from '../Component/Grievance';
 import { NearReport } from '../Component/NearReport';
 import { CriticalReport } from '../Component/CriticalReport';
 import { Idea } from '../Component/Idea';
-import { PersonalDetails } from '../Component/PersonalDetails'
+import { PersonalDetails } from '../Component/PersonalDetails';
+import { Language } from '../Component/Language'
 
 export class HomeScreen extends Component {
     static navigationOptions = {
@@ -24,13 +25,12 @@ export class HomeScreen extends Component {
         return (
             <View style={styles.conatianer}>
                 <View style={styles.viewRow1}>
-                    {/* untouch images here  */}
-                    {/* <TouchableOpacity
+                    <TouchableOpacity
                         style={{ marginLeft: 8 }}
-                        onPress={() => this.props.navigation.navigate('Personal')}> */}
-                    <Image source={require('../image/home1.png')}
-                        style={{ width: 180, height: 200 }} />
-                    {/* </TouchableOpacity> */}
+                        onPress={() => this.props.navigation.navigate('Language')}>
+                        <Image source={require('../image/home1.png')}
+                            style={{ width: 180, height: 200 }} />
+                    </TouchableOpacity>
                     {/* untouch images ends */}
 
                     {/* here second images touch  */}
@@ -108,6 +108,9 @@ export const Home = StackNavigator({
     },
     PersonalDetails: {
         screen: PersonalDetails
+    },
+    Language: {
+        screen: Language
     }
 })
 const styles = StyleSheet.create({

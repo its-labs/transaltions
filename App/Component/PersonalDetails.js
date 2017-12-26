@@ -88,10 +88,9 @@ export  class PersonalDetails extends Component {
 I18n.fallbacks = true
 
 I18n.translations = {
-    'en': require('../Demo/translations/en'),
-    'ar': require('../Demo/translations/ar'),
+    'en': require('../Transaltions/en'),
+    'ar': require('../Transaltions/ar'),
 };
-
 I18nManager.allowRTL(I18n.locale in I18n.translations);
 I18n.start  = I18nManager.isRTL ? 'right' : 'left';
 I18n.end    = I18nManager.isRTL ? 'left' : 'right';

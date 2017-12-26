@@ -17,12 +17,12 @@ import I18n, { getLanguages } from 'react-native-i18n';
 I18n.fallbacks = true
 
 I18n.translations = {
-    'en': require('./App/Transaltions/en'),
-    'ar': require('./App/Transaltions/ar'),
+    'en': require('../Transaltions/en'),
+    'ar': require('../Transaltions/ar'),
 };
 
 
-export class Transaltions extends Component {
+export class Language extends Component {
     constructor() {
         super()
         this.state = {
@@ -36,13 +36,13 @@ export class Transaltions extends Component {
 
         if (checkEnglish.indexOf(user) !== -1) {
             I18n.locale = 'en'
-            I18nManager.forceRTL(true)
-            this.setState({ checklag: false })
+            I18nManager.forceRTL(false)
+            this.setState({ checklag: true })
         }
         if (checkArabic.indexOf(user) !== -1) {
             I18n.locale = 'ar'
-            I18nManager.forceRTL(false)
-            this.setState({ checklag: true })
+            I18nManager.forceRTL(true)
+            this.setState({ checklag: false })
 
         }
         //     this.setName(user);
