@@ -11,16 +11,18 @@ import {
   TextInput
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import {cssIdea} from '../Styles/Styles'
+
 export class Idea extends Component{
     static navigationOptions = {
         title: 'Got an Idea',
       };
     render(){
         return(
-            <View style={styles.container}>
-           <Text style={styles.text}>What Idea:  </Text>
+            <View style={cssIdea.container}>
+           <Text style={cssIdea.text}>What Idea:  </Text>
             <TextInput
-            style={styles.input}
+            style={cssIdea.input}
             />
             <TouchableOpacity>
                 <Text> Upload File </Text>
@@ -29,25 +31,3 @@ export class Idea extends Component{
         )
     }
 }
-const styles=StyleSheet.create({
-    container:{
-        flex:1,
-        backgroundColor:'white',
-        paddingTop:11,
-        paddingLeft:10,
-        paddingRight:10,
-        paddingBottom:11
-        },
-        input:{
-            height: 66,
-            fontSize: 16,
-            marginTop: 6,
-            backgroundColor: 'white',
-            color: 'black',
-            borderWidth: 1,
-            alignSelf: 'stretch',
-        },
-        text:{
-            paddingTop:16
-        }
-    })

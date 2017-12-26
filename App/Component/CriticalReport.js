@@ -10,22 +10,17 @@ import {
   ImageBackground
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import {cssCritical} from '../Styles/Styles'
+
 export class CriticalReport extends Component{
     static navigationOptions = {
         title: 'Critical Incident Report',
       };
     render(){
         return(
-            <View style={styles.container}>
+            <View style={cssCritical.container}>
             <Text> Wellcome to Critical Incident Report </Text>
             </View>
         )
     }
 }
-const styles=StyleSheet.create({
-    container:{
-    flex:1,
-    backgroundColor:'steelblue',
-    paddingTop:44
-    },
-})

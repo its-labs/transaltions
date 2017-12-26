@@ -6,21 +6,14 @@ import {
     View,
     Image,
     TouchableOpacity,
-    I18nManager,
     Picker,
+    I18nManager,
     AsyncStorage,
 
 } from 'react-native';
-//import { StackNavigator } from 'react-navigation';
+import { StackNavigator } from 'react-navigation';
 import I18n, { getLanguages } from 'react-native-i18n';
-
-I18n.fallbacks = true
-
-I18n.translations = {
-    'en': require('../Transaltions/en'),
-    'ar': require('../Transaltions/ar'),
-};
-
+import { cssLanguage } from '../Styles/Styles'
 
 export class Language extends Component {
     constructor() {
@@ -43,43 +36,28 @@ export class Language extends Component {
             I18n.locale = 'ar'
             I18nManager.forceRTL(true)
             this.setState({ checklag: false })
-
         }
         //     this.setName(user);
         this.setState({ name: user });
     }
-
     render() {
         return (
-            <View style={styles.container}>
+            <View style={cssLanguage.container}>
                 <Picker
                     selectedValue={this.state.name}
                     onValueChange={this.chooseLanguages}>
                     <Picker.Item label="English" value="English" />
                     <Picker.Item label="Arabic" value="Arabic" />
                 </Picker>
-
-                <Text style={this.state.checklag ? styles.centerAlign:styles.rightAlign}>{I18n.t('welcome')}</Text>
-
+                <Text style={this.state.checklag ? cssLanguage.centerAlign : cssLanguage.rightAlign}>{I18n.t('welcome')}</Text>
             </View>
         )
     }
-
 }
 
+I18n.fallbacks = true
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding:12
-
-
-    },
-    centerAlign: {
-        textAlign: "left"
-    },
-    rightAlign: {
-        textAlign: "right"
-    }
-
-})
+I18n.translations = {
+    'en': require('../Transaltions/en'),
+    'ar': require('../Transaltions/ar'),
+};
