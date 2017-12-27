@@ -49,7 +49,7 @@ export class HomeScreen extends Component {
                         style={{ marginLeft: 8 }}
                         onPress={() => this.props.navigation.navigate('CriticalReport')}>
                         <Image source={require('../image/home4.png')}
-                            style={{ width: 190, height: 200 }} />
+                            style={{ width: 180, height: 200 }} />
                     </TouchableOpacity>
                 </View>
                 <View style={cssHome.viewRow3}>
@@ -62,7 +62,7 @@ export class HomeScreen extends Component {
                         style={{ marginLeft: 8 }}
                         onPress={() => this.props.navigation.navigate('PersonalDetails')}>
                         <Image source={require('../image/home6.png')}
-                            style={{ width: 190, height: 200 }} />
+                            style={{ width: 180, height: 200 }} />
                     </TouchableOpacity>
                 </View>
             </View>

@@ -15,11 +15,11 @@ export const cssHome = StyleSheet.create({
     },
     viewRow2: {
         flexDirection: 'row',
-        marginTop: 6
+        marginTop: 4
     },
     viewRow3: {
         flexDirection: 'row',
-        marginTop: 6
+        marginTop: 4
     },
 })
 // here styles ends for Homescreen
@@ -45,7 +45,7 @@ export const cssGrievance = StyleSheet.create({
     },
     text: {
         paddingTop: 16,
-        color:'black'
+        color: 'black'
 
     },
     input1: {
@@ -65,14 +65,29 @@ export const cssGrievance = StyleSheet.create({
     },
     centerAlign: {
         textAlign: "right",
-        color:'black',
+        color: 'black',
         paddingTop: 16,
     },
     rightAlign: {
         textAlign: "left",
-        color:'black',
+        color: 'black',
         paddingTop: 16,
-    }
+    },
+    dropDown: {
+        height: 38,
+        marginTop: 6,
+        backgroundColor: 'white',
+        borderWidth: 1,
+    },
+    input2: {
+        height: 58,
+        fontSize: 16,
+        marginTop: 6,
+        backgroundColor: 'white',
+        color: 'black',
+        borderWidth: 1,
+        alignSelf: 'stretch',
+    },
 })
 // here styles ends for Grievenace screen
 
@@ -105,7 +120,7 @@ export const cssPersonal = StyleSheet.create({
     },
     text: {
         paddingTop: 16,
-        color:'black'
+        color: 'black'
     },
     input1: {
         height: 38,
@@ -121,7 +136,17 @@ export const cssPersonal = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         paddingTop: 5
-    }
+    },
+    dropDown: {
+        height: 38,
+        marginTop: 6,
+        backgroundColor: 'white',
+        borderWidth: 1,
+       
+    },
+    contentContainer: {
+        padding: 30,
+      },
 })
 // here styles ends for PersonalDetalis screen
 
@@ -205,18 +230,34 @@ export const cssReport = StyleSheet.create({
         textAlign: 'center',
         paddingTop: 4
     },
-    upload:{
-        backgroundColor:'#E5E0DD',
-        height:38,
-        marginTop:12,
-        borderWidth:1,
-        borderColor:'white'
+    upload: {
+        backgroundColor: '#E5E0DD',
+        height: 38,
+        marginTop: 12,
+        borderWidth: 1,
+        borderColor: 'white'
     },
-    uploadText:{
-        color:'black',
+    uploadText: {
+        color: 'black',
         fontWeight: 'bold',
         textAlign: 'center',
-        paddingTop:6
-    }
+        paddingTop: 6
+    },
+    dropDown: {
+        height: 38,
+        marginTop: 6,
+        backgroundColor: 'white',
+        borderWidth: 1,
+
+    },
+    input2: {
+        height: 58,
+        fontSize: 16,
+        marginTop: 6,
+        backgroundColor: 'white',
+        color: 'black',
+        borderWidth: 1,
+        alignSelf: 'stretch',
+    },
 })
 // here styles ends for NearReport screen
